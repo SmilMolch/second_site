@@ -1,0 +1,73 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Flowers Shop
+    link(rel="stylesheet", href="css/bootstrap-reboot.min.css")
+    link(rel="stylesheet", href="css/main.css")
+  body
+    html
+  body
+    include template.pug
+    +createMenu
+        .container1
+        .box
+          h3 Качество!
+          p Всегда свежие цветы премиум качества.
+        .box
+          h3 Доставка!
+          p Доставка курьером от 300₽ по Владивостоку и пригороду
+        .box
+          h3 Бонусы!
+          p Сделаем фото перед отправкой букета.
+
+    .banner
+      h1 Flowers Shop
+      p Огромный выбор цветов
+      a.btn(href="#") Купить сейчас
+    section.products
+      .container
+        h2 Новые поступления!
+        .products
+          .product-item
+            a(href="index-2.html")
+              img(src="https://flowers20.ru/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-14-at-14.23.36-450x450.jpeg", alt="Букет цветов")
+            h3 Букет цветов
+            p.price 1000 руб.
+          .product-item
+            img(src="https://flowers20.ru/wp-content/uploads/2023/03/F5544641-2315-45EE-AB48-8DE654BFB9E0-1-e1679718207103-450x450.jpg", alt="Очень дорогие цветы")
+            h3 Очень дорогие цветы
+            p.price 10000 руб.
+          .product-item
+            img(src="https://flowers20.ru/wp-content/uploads/2022/02/IMG_5026-e1644471640175-450x450.jpg", alt="Букеты с едой")
+            h3 Букеты с едой
+            p.price 1500 руб.
+        .products
+          .product-item
+            img(src="https://flowers20.ru/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-14-at-14.23.36-450x450.jpeg", alt="Букет цветов")
+            h3 Букет цветов
+            p.price 1000 руб.
+          .product-item
+            img(src="https://flowers20.ru/wp-content/uploads/2023/03/F5544641-2315-45EE-AB48-8DE654BFB9E0-1-e1679718207103-450x450.jpg", alt="Очень дорогие цветы")
+            h3 Очень дорогие цветы
+            p.price 10000 руб.
+          .product-item
+            img(src="https://flowers20.ru/wp-content/uploads/2022/02/IMG_5026-e1644471640175-450x450.jpg", alt="Букеты с едой")
+            h3 Букеты с едой
+            p.price 1500 руб.
+    section.about-us
+      .container
+        h2 О нас
+        p Мы рады приветствовать вас в нашем интернет-магазине цветов. У нас вы найдете огромный выбор цветов для любого случая.
+        a.btn(href="index-3.html") Узнать больше
+    section.contact-us
+      .container
+        h2 Контакты 
+        ul
+          li Свяжитесь с нами для получения дополнительной информации:
+          li Телефон: +7(000)000-00-00
+          li E-mail: info@flower20.ru
+          li Адрес: г. Москва, ул. Кремль, д. 1
+    footer
+      p Цветы 2.0    
+      p 2023

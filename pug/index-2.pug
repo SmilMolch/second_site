@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+  head
+    title Букет цветов
+    link(rel="stylesheet", href="css/bootstrap-reboot.min.css")
+    link(rel="stylesheet", href="css/main.css")
+  body
+    include template.pug
+    +createMenu
+    .containermain
+      .product-image
+        img(src="https://flowers20.ru/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-14-at-14.23.36-450x450.jpeg", alt="Букет цветов")
+      .product-info
+        h1 Букет цветов
+        p Описание товара.
+        label Открытка:
+        select
+          option(value="") Выберите открытку
+          option(value="1") Открытка 1
+          option(value="2") Открытка 2
+          option(value="3") Открытка 3
+        label Сладости:
+        select
+          option(value="0") Выберите сладости
+          option(value="1") Сладость 1
+          option(value="2") Сладость 2
+          option(value="3") Сладость 3
+        p Цена: 1000 рублей
+        button(onclick="buy()") Купить
+    section.about-us
+      .container
+        h2 О нас
+        p Мы рады приветствовать вас в нашем интернет-магазине цветов. У нас вы найдете огромный выбор цветов для любого случая.
+        a.btn(href="index-2.html") Узнать больше
+    section.contact-us
+      .container
+        h2 Контакты 
+        ul
+          li Свяжитесь с нами для получения дополнительной информации:
+          li Телефон: +7(000)000-00-00
+          li E-mail: info@flower20.ru
+          li Адрес: г. Москва, ул. Кремль, д. 1
+    footer
+      p Цветы 2.0    
+      p 2023
